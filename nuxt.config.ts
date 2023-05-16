@@ -11,6 +11,11 @@ export default defineNuxtConfig({
                 changeOrigin: true,
                 rewrite: (path: any) => path.replace(/^\/shields/, '')
             },
+            '/github': {
+                target: 'https://github.com/',
+                changeOrigin: true,
+                rewrite: (path: any) => path.replace(/^\/github/, '')
+            }
         }
     },
 })
