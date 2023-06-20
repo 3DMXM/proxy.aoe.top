@@ -15,6 +15,11 @@ export default defineNuxtConfig({
                 target: 'https://github.com/',
                 changeOrigin: true,
                 rewrite: (path: any) => path.replace(/^\/github/, '')
+            },
+            '/githubusercontent': {
+                target: 'https://raw.githubusercontent.com',
+                changeOrigin: true,
+                rewrite: (path: any) => path.replace(/^\/githubusercontent/, '')
             }
         }
     },
