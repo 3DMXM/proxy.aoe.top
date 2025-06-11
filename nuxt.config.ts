@@ -21,6 +21,11 @@ export default defineNuxtConfig({
                 changeOrigin: true,
                 rewrite: (path: any) => path.replace(/^\/github/, '')
             },
+            '/imgyoutube':{
+                target:'https://img.youtube.com/',
+                changeOrigin: true,
+                rewrite: (path: any) => path.replace(/^\/imgyoutube/, '')
+            }
         }
     },
 })
